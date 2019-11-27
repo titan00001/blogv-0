@@ -1,0 +1,21 @@
+
+<head>
+    <title>blog website</title>
+</head>
+<body>
+    <h1>Node blog</h1>
+
+    <ul>
+        <% for(var blog of blogs) { %>
+
+        <li><%= blog.blogContent %></li>
+
+        <% } %>
+    </ul>
+    
+    <form action="addpost" method="post">
+        <textarea name="blogContent" id="" cols="30" rows="2"></textarea>
+        <input type="submit" value="AddPost">
+    </form>
+</body>
+</html>
